@@ -139,3 +139,4 @@ cython_debug/
 
 # Redis data
 data/appendonly.aof
+data/dump.rdb
