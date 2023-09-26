@@ -1,0 +1,11 @@
+fastapi
+redis
+uvicorn
+passlib
+python-jose
+bcrypt
+aiomysql
+requests
+asgi-lifespan
+python-dateutil
+httpx
