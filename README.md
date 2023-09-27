@@ -22,6 +22,10 @@ First, clone this repo and build the Docker images for the project:
 Running the API involves starting the app server and Redis. You'll do those steps
 next!
 
+## ES Key generation code
+
+openssl ecparam -genkey -name secp521r1 -noout -out ec512-key-pair.pem
+
 
 ## Running the API
 
