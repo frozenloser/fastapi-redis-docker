@@ -18,3 +18,18 @@ services:
         depends_on:
             - redis
         command: /start-reload.sh
+
+    db:
+        image: postgres:12
+        restart: always
+        volumes:
+            - $PWD/db:/var/lib/postgresql/data
+        environment:
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_USER: postgres
+            POSTGRES_DB: postgres
+        ports:
+            - "5432:5432"
+        command: postgres -c log_statement=all
+    
+
